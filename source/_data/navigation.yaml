@@ -1,0 +1,67 @@
+logo:
+  text: Plastic-Metal
+  type: link
+  path: index.html
+
+main:
+
+- text: Index
+  type: link
+  path: index.html
+
+- text: JMobileSuitLite (for JAVA)
+  type: label
+
+- text: English Documentation
+  type: link
+  path: en-US/JMobileSuitLite/index.html
+  children:
+    - text: Get Started
+      type: link
+      path: en-US/JMobileSuitLite/GetStarted.html
+    - text: Create complex commands
+      type: link
+      path: en-US/JMobileSuitLite/ComplexCommands.html
+    - text: Use MobileSuitScripts
+      type: link
+      path: en-US/JMobileSuitLite/MobileSuitScripts.html
+    - text: Useful Features
+      type: link
+      path: en-US/JMobileSuitLite/AdvanceUsage.html
+- text: 中文文档
+  type: link
+  path: zh-CN/JMobileSuitLite/index.html
+  children:
+    - text: 快速开始
+      type: link
+      path: zh-CN/JMobileSuitLite/GetStarted.html
+    - text: 创建复杂指令
+      type: link
+      path: zh-CN/JMobileSuitLite/ComplexCommands.html
+    - text: 使用MobileSuit脚本
+      type: link
+      path: zh-CN/JMobileSuitLite/MobileSuitScripts.html
+    - text: 有用的特性
+      type: link
+      path: zh-CN/JMobileSuitLite/AdvanceUsage.html
+
+
+
+
+- text: MobileSuit (for .NET Core)
+  type: label
+
+- text: English Documentation
+  type: link
+  path: en-US/MobileSuit/index.html
+  children:
+    - text: Get Started
+      type: link
+      path: en-US/MobileSuit/GetStarted.html
+
+- text: 中文文档
+  type: link
+  path: zh-CN/MobileSuit/index.html
+
+
+  
