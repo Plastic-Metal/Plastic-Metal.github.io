@@ -32,6 +32,7 @@ ignore:
   # development only: ignore sub node_modules when `npm link hexo-theme-doc`
   - '**/node_modules/**/*node_modules'
 
+##
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
