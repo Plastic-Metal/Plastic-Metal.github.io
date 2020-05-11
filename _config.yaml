@@ -31,3 +31,10 @@ theme_config:
 ignore:
   # development only: ignore sub node_modules when `npm link hexo-theme-doc`
   - '**/node_modules/**/*node_modules'
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repo: git@github.com:Plastic-Metal/Plastic-Metal.github.io.git
+  branch: master
