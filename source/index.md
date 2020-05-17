@@ -10,10 +10,7 @@ This site provides documentations for our products.
 
 ### MobileSuit(For .NET)
 
-![nuget](https://img.shields.io/nuget/v/PlasticMetal.MobileSuit?style=flat-square) 
-![Nuget](https://img.shields.io/nuget/dt/PlasticMetal.MobileSuit?style=flat-square)
-![GitHub](https://img.shields.io/github/license/Plastic-Metal/MobileSuit?style=flat-square)
-![GitHub last commit](https://img.shields.io/github/last-commit/Plastic-Metal/MobileSuit?style=flat-square)
+![nuget](https://img.shields.io/nuget/v/PlasticMetal.MobileSuit?style=flat-square)![Nuget](https://img.shields.io/nuget/dt/PlasticMetal.MobileSuit?style=flat-square)![GitHub](https://img.shields.io/github/license/Plastic-Metal/MobileSuit?style=flat-square)![GitHub last commit](https://img.shields.io/github/last-commit/Plastic-Metal/MobileSuit?style=flat-square)
 
 [View at Nuget.org](https://www.nuget.org/packages/PlasticMetal.MobileSuit/)
 
@@ -26,9 +23,7 @@ MobileSuit provides an easy way to quickly build a .NET Console App.
 
 ### JMobileSuitLite(For Java)
 
-![maven](https://img.shields.io/maven-central/v/io.github.plastic-metal/JMobileSuitLite?style=flat-square)
-![license](https://img.shields.io/github/license/Plastic-Metal/JMobileSuitLite?style=flat-square)
-![GitHub last commit](https://img.shields.io/github/last-commit/Plastic-Metal/JMobileSuitLite?style=flat-square)
+![maven](https://img.shields.io/maven-central/v/io.github.plastic-metal/JMobileSuitLite?style=flat-square)![license](https://img.shields.io/github/license/Plastic-Metal/JMobileSuitLite?style=flat-square)![GitHub last commit](https://img.shields.io/github/last-commit/Plastic-Metal/JMobileSuitLite?style=flat-square)
 
 [View in Maven-central](https://search.maven.org/artifact/io.github.plastic-metal/JMobileSuitLite/)
 
