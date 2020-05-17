@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+
+    <title>Plastic Metal | 将PlasticMetal.JMobileSuitLite命令打包为脚本文件来实现工作流程自动化 </title>
+    <meta name="description" content>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+
+    <!-- fonts -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Ubuntu:300,400,500,600,700" rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/style/doc.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="/images/favicon.ico">
+
+    
+
+  </head>
+  <body>
+
+   <script>window.__INITIAL_STATE__ = {"page":{"title":"将PlasticMetal.JMobileSuitLite命令打包为脚本文件来实现工作流程自动化","path":"zh-CN/JMobileSuitLite/MobileSuitScripts.html","support":{"link_url":"mailto:ferdinandsukhoi@outlook.com","link_text":"Contact Us","text":"Did not you find what are you looking for? Try searching again on the left menu or","navigation":true,"navigation_label":"SUPPORT"}},"data":{"navigation":{"logo":{"text":"Plastic-Metal","type":"link","path":"index.html"},"main":[{"text":"Index","type":"link","path":"index.html"},{"text":"JMobileSuitLite (for JAVA)","type":"label"},{"text":"English Documentation","type":"link","path":"en-US/JMobileSuitLite/index.html","children":[{"text":"Get Started","type":"link","path":"en-US/JMobileSuitLite/GetStarted.html"},{"text":"Create complex commands","type":"link","path":"en-US/JMobileSuitLite/ComplexCommands.html"},{"text":"Use MobileSuitScripts","type":"link","path":"en-US/JMobileSuitLite/MobileSuitScripts.html"},{"text":"Useful Features","type":"link","path":"en-US/JMobileSuitLite/AdvanceUsage.html"}]},{"text":"中文文档","type":"link","path":"zh-CN/JMobileSuitLite/index.html","children":[{"text":"快速开始","type":"link","path":"zh-CN/JMobileSuitLite/GetStarted.html"},{"text":"创建复杂指令","type":"link","path":"zh-CN/JMobileSuitLite/ComplexCommands.html"},{"text":"使用MobileSuit脚本","type":"link","path":"zh-CN/JMobileSuitLite/MobileSuitScripts.html"},{"text":"有用的特性","type":"link","path":"zh-CN/JMobileSuitLite/AdvanceUsage.html"}]},{"text":"MobileSuit (for .NET)","type":"label"},{"text":"English Documentation","type":"link","path":"en-US/MobileSuit/index.html","children":[{"text":"Get Started","type":"link","path":"en-US/MobileSuit/GetStarted.html"}]},{"text":"中文文档","type":"link","path":"zh-CN/MobileSuit/index.html"}]}},"config":{"timezone":"UTC","root":"/","time_format":"HH:mm:ss","theme":"../node_modules/hexo-theme-doc","theme_config":{"swagger_ui":{"version":2,"permalinks":true,"api_explorer":true,"download":"Download specification","show_extensions":false,"deep_linking":true,"display_operation_id":false,"doc_expansion":"none"},"search":{"skip":false,"background":false,"route":"/lunr.json"},"favicon":"images/favicon.ico","support":{"link_url":"mailto:ferdinandsukhoi@outlook.com","link_text":"Contact Us","text":"Did not you find what are you looking for? Try searching again on the left menu or","navigation":true,"navigation_label":"SUPPORT"}}}}</script>
+
+    <div id="react-navigation-root"><div class="doc-navigation" data-reactroot><nav class="doc-navbar"><a href="/index.html" class="doc-navbar__logo"><img src="/images/logo.png" class="doc-navbar__logo__img"><span class="doc-navbar__logo__text">Plastic-Metal</span></a><i class="dc-icon dc-icon--close dc-icon--interactive doc-sidebar-close doc-navbar__sidebar-close doc-navbar__sidebar-close--desktop"></i><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-navbar__sidebar-toggle"></i></nav><nav class="doc-sidebar"><div class="doc-sidebar__vertical-menu"><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-sidebar-toggle--primary doc-sidebar__vertical-menu__item"></i><i class="dc-icon dc-icon--search dc-icon--interactive doc-sidebar__vertical-menu__item doc-sidebar__vertical-menu__item--primary"></i></div><div class="doc-sidebar-content"><div class="doc-sidebar__search-form"></div><ul class="doc-sidebar-list"><li class="doc-sidebar-list__item doc-sidebar-list__item--label"><span class>SUPPORT</span></li><li class="doc-sidebar-list__item doc-sidebar-list__item--link"><a class href="/mailto:ferdinandsukhoi@outlook.com" target="_blank"><span>Contact Us</span></a></li></ul></div></nav></div></div>
+    <div class="doc-content">
+  <div class="dc-page">
+    <div class="dc-card">
+      <div id="react-search-results-root"></div>
+      <div id="page-content" class="doc-formatting">
+        <p><strong>该特性在 JMobileSuitLite 0.1.2 或更高版本可用</strong></p>
+<p>在本节, 你不再需要编写Java代码， 而是需要编写一个包含你应用里各种命令的脚本文件.</p>
+<h2 id="创建脚本文件"><a href="#创建脚本文件" class="headerlink" title="创建脚本文件"></a>创建脚本文件</h2><p>创建一个文本文件. 文件名可以是任意的, 但是我们建议使用 “.mss” 作为扩展名，意为MobileSuit脚本(MobileSuit Script).</p>
+<p>使用你应用里的命令填充脚本。<strong>对于 JMobileSuitLite 0.1.2.2 或更高版本</strong>, 你在 <strong>行首</strong> 添加 <em>‘#’</em> 来创建行注释，它们不会被JMobileSuit解析. </p>
+<p>这些命令可能包含非法命令，或者是不存在的命令。然而, 当JMobileSuit执行到包含这种命令的行时，它会停下来并返回错误。该行之后的命令 <strong>不会</strong> 被执行.</p>
+<p>例如:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">#不执行</span><br><span class="line">#hello</span><br><span class="line">hello</span><br><span class="line">bye foo</span><br><span class="line">#在下一行停止：不存在的命令</span><br><span class="line">@hello</span><br><span class="line">#尽管下一行合法，但是不会被执行</span><br><span class="line">@ls</span><br></pre></td></tr></table></figure>
+<h2 id="在应用中运行脚本文件"><a href="#在应用中运行脚本文件" class="headerlink" title="在应用中运行脚本文件"></a>在应用中运行脚本文件</h2><p>使用 <em>RunScript</em> 或者 <em>Rs</em> 命令来运行脚本文件。参数是脚本文件的(绝对或者相对)路径.</p>
+<p>脚本文件可以包含 <em>RunScript</em> 或 <em>Rs</em> 命令, 所以请小心堆栈溢出的发生。.</p>
+<p><strong>This feature only works on JMobileSuitLite 0.1.2 or later version</strong></p>
+<p>Pack-up your commands into a script file can make workflow automatically.</p>
+<p>In this part, you need no Java codes to write. In stead, you should write a script file contains commands of your application.</p>
+
+        <div id="react-support-footer-root"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+
+    
+
+    <!-- js vendors -->
+    <script src="//code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.0/lunr.min.js"></script>
+
+    <!-- js source  -->
+    <script src="/script/doc.js"></script>
+
+    
+
+  </body>
+</html>

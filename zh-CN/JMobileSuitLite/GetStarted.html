@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+
+    <title>Plastic Metal | 快速开始 - PlasticMetal.JMobileSuitLite </title>
+    <meta name="description" content>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+
+    <!-- fonts -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Ubuntu:300,400,500,600,700" rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/style/doc.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="/images/favicon.ico">
+
+    
+
+  </head>
+  <body>
+
+   <script>window.__INITIAL_STATE__ = {"page":{"title":"快速开始 - PlasticMetal.JMobileSuitLite","path":"zh-CN/JMobileSuitLite/GetStarted.html","support":{"link_url":"mailto:ferdinandsukhoi@outlook.com","link_text":"Contact Us","text":"Did not you find what are you looking for? Try searching again on the left menu or","navigation":true,"navigation_label":"SUPPORT"}},"data":{"navigation":{"logo":{"text":"Plastic-Metal","type":"link","path":"index.html"},"main":[{"text":"Index","type":"link","path":"index.html"},{"text":"JMobileSuitLite (for JAVA)","type":"label"},{"text":"English Documentation","type":"link","path":"en-US/JMobileSuitLite/index.html","children":[{"text":"Get Started","type":"link","path":"en-US/JMobileSuitLite/GetStarted.html"},{"text":"Create complex commands","type":"link","path":"en-US/JMobileSuitLite/ComplexCommands.html"},{"text":"Use MobileSuitScripts","type":"link","path":"en-US/JMobileSuitLite/MobileSuitScripts.html"},{"text":"Useful Features","type":"link","path":"en-US/JMobileSuitLite/AdvanceUsage.html"}]},{"text":"中文文档","type":"link","path":"zh-CN/JMobileSuitLite/index.html","children":[{"text":"快速开始","type":"link","path":"zh-CN/JMobileSuitLite/GetStarted.html"},{"text":"创建复杂指令","type":"link","path":"zh-CN/JMobileSuitLite/ComplexCommands.html"},{"text":"使用MobileSuit脚本","type":"link","path":"zh-CN/JMobileSuitLite/MobileSuitScripts.html"},{"text":"有用的特性","type":"link","path":"zh-CN/JMobileSuitLite/AdvanceUsage.html"}]},{"text":"MobileSuit (for .NET)","type":"label"},{"text":"English Documentation","type":"link","path":"en-US/MobileSuit/index.html","children":[{"text":"Get Started","type":"link","path":"en-US/MobileSuit/GetStarted.html"}]},{"text":"中文文档","type":"link","path":"zh-CN/MobileSuit/index.html"}]}},"config":{"timezone":"UTC","root":"/","time_format":"HH:mm:ss","theme":"../node_modules/hexo-theme-doc","theme_config":{"swagger_ui":{"version":2,"permalinks":true,"api_explorer":true,"download":"Download specification","show_extensions":false,"deep_linking":true,"display_operation_id":false,"doc_expansion":"none"},"search":{"skip":false,"background":false,"route":"/lunr.json"},"favicon":"images/favicon.ico","support":{"link_url":"mailto:ferdinandsukhoi@outlook.com","link_text":"Contact Us","text":"Did not you find what are you looking for? Try searching again on the left menu or","navigation":true,"navigation_label":"SUPPORT"}}}}</script>
+
+    <div id="react-navigation-root"><div class="doc-navigation" data-reactroot><nav class="doc-navbar"><a href="/index.html" class="doc-navbar__logo"><img src="/images/logo.png" class="doc-navbar__logo__img"><span class="doc-navbar__logo__text">Plastic-Metal</span></a><i class="dc-icon dc-icon--close dc-icon--interactive doc-sidebar-close doc-navbar__sidebar-close doc-navbar__sidebar-close--desktop"></i><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-navbar__sidebar-toggle"></i></nav><nav class="doc-sidebar"><div class="doc-sidebar__vertical-menu"><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-sidebar-toggle--primary doc-sidebar__vertical-menu__item"></i><i class="dc-icon dc-icon--search dc-icon--interactive doc-sidebar__vertical-menu__item doc-sidebar__vertical-menu__item--primary"></i></div><div class="doc-sidebar-content"><div class="doc-sidebar__search-form"></div><ul class="doc-sidebar-list"><li class="doc-sidebar-list__item doc-sidebar-list__item--label"><span class>SUPPORT</span></li><li class="doc-sidebar-list__item doc-sidebar-list__item--link"><a class href="/mailto:ferdinandsukhoi@outlook.com" target="_blank"><span>Contact Us</span></a></li></ul></div></nav></div></div>
+    <div class="doc-content">
+  <div class="dc-page">
+    <div class="dc-card">
+      <div id="react-search-results-root"></div>
+      <div id="page-content" class="doc-formatting">
+        <p>PlasticMetal.MobileSuit 是一个用来快速构造 .NET Core控制台程序的强大工具。现在，它的轻量化版本被移植到Java平台上来了，这就是JMobileSuitLite.</p>
+<h2 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h2><p>第一步，你需要在IDE中新建一个Java项目。</p>
+<p>然后，添加 <a href="https://search.maven.org/artifact/io.github.plastic-metal/JMobileSuitLite" target="_blank" rel="noopener">PlasticMetal.JMobileSuitLite</a> 到你的项目。</p>
+<h2 id="编写客户端类"><a href="#编写客户端类" class="headerlink" title="编写客户端类"></a>编写客户端类</h2><h3 id="创建类"><a href="#创建类" class="headerlink" title="创建类"></a>创建类</h3><p>向项目添加一个新类, 名为 <strong><em>Client</em></strong>. 它继承自 <strong><em>PlasticMetal.JMobileSuitLite.ObjectModel.SuitClient</em></strong>.</p>
+<h3 id="为类添加自定义标记"><a href="#为类添加自定义标记" class="headerlink" title="为类添加自定义标记:"></a>为类添加自定义标记:</h3><p><em>PlasticMetal.JMobileSuitLite.ObjectModel.Annotions..SuitInfo</em> 使用参数 “Demo”</p>
+<h3 id="添加第一条指令"><a href="#添加第一条指令" class="headerlink" title="添加第一条指令"></a>添加第一条指令</h3><p>向 <strong><em>Client</em></strong> 类添加方法，名为 <strong><em>Hello</em></strong>. 它没有参数，也没有返回值.</p>
+<p>方法的内容可以是任意的，它将在你输入Hello命令时被执行。在客户端类中，你可以使用 <em>IO().WriteLine</em> 和 <em>IO().ReadLine</em> 来代替 <em>System.out.println</em> 和 <em>Scanner::nextLine</em> 来完成IO操作.</p>
+<h3 id="向命令添加说明和别名"><a href="#向命令添加说明和别名" class="headerlink" title="向命令添加说明和别名"></a>向命令添加说明和别名</h3><p>向方法添加以下自定义标记:</p>
+<ol>
+<li><em>PlasticMetal.JMobileSuitLite.ObjectModel.Annotions..SuitInfo</em> 使用参数 “hello command.”</li>
+<li><em>PlasticMetal.JMobileSuitLite.ObjectModel.Annotions..SuitAlias</em> 使用参数 “H”</li>
+</ol>
+<h3 id="A添加另一条命令"><a href="#A添加另一条命令" class="headerlink" title="A添加另一条命令"></a>A添加另一条命令</h3><p>向<strong><em>Client</em></strong> 类添加方法，名为 <strong><em>Bye</em></strong> . 它有一个字符串参数, 名为 <em>name</em>. 它返回一个 <em>string</em>.</p>
+<p>方法的内容可以是任意的，它将在你输入Hello命令时被执行。在客户端类中，你可以使用 <em>IO().WriteLine</em> 和 <em>IO().ReadLine</em> 来代替 <em>System.out.println</em> 和 <em>Scanner::nextLine</em> 来完成IO操作.</p>
+<h3 id="向应用添加主函数"><a href="#向应用添加主函数" class="headerlink" title="向应用添加主函数"></a>向应用添加主函数</h3><p>添加主函数</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> Exception</span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>到这个类中, 然后添加如下代码到 <strong><em>main</em></strong> 中:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> SuitHost(Client<span class="class">.<span class="keyword">class</span>).<span class="title">Run</span>()</span>;</span><br></pre></td></tr></table></figure>
+<h3 id="检查您在-Client-java-中的代码"><a href="#检查您在-Client-java-中的代码" class="headerlink" title="检查您在 Client.java 中的代码"></a>检查您在 Client.java 中的代码</h3><p>它的内容大概是:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> PlasticMetal.JMobileSuitLite.ObjectModel.Annotions.SuitAlias;</span><br><span class="line"><span class="keyword">import</span> PlasticMetal.JMobileSuitLite.ObjectModel.Annotions.SuitInfo;</span><br><span class="line"><span class="keyword">import</span> PlasticMetal.JMobileSuitLite.ObjectModel.SuitClient;</span><br><span class="line"><span class="keyword">import</span> PlasticMetal.JMobileSuitLite.SuitHost;</span><br><span class="line"></span><br><span class="line"><span class="meta">@SuitInfo</span>(<span class="string">"Demo"</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Client</span> <span class="keyword">extends</span> <span class="title">SuitClient</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="meta">@SuitAlias</span>(<span class="string">"H"</span>)</span><br><span class="line">    <span class="meta">@SuitInfo</span>(<span class="string">"hello command"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Hello</span><span class="params">()</span></span>&#123;</span><br><span class="line">        IO().WriteLine(<span class="string">"Hello! MobileSuit!"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">Bye</span><span class="params">(String name)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        IO().WriteLine(<span class="string">"Bye!"</span>+name);</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"bye"</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> Exception</span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">new</span> SuitHost(Client<span class="class">.<span class="keyword">class</span>).<span class="title">Run</span>()</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="运行并测试你的应用"><a href="#运行并测试你的应用" class="headerlink" title="运行并测试你的应用"></a>运行并测试你的应用</h2><p>编译并运行你的程序.</p>
+<p>在控制台中，你可以输入:</p>
+<ol>
+<li><strong>Help</strong> 来查看MobileSuit帮助</li>
+<li><strong>List</strong> 或 <strong>ls</strong> 来查看对于客户端可用的指令.</li>
+<li><strong>Hello</strong> 或 <strong>h</strong> 来调用 <em>Client.Hello()</em></li>
+<li><strong>Bye</strong> <strong><em>name</em></strong> 来调用 <em>Client.Bye(</em> <strong><em>name</em></strong> <em>)</em></li>
+<li><strong>Exit</strong> 来退出程序</li>
+</ol>
+
+        <div id="react-support-footer-root"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+
+    
+
+    <!-- js vendors -->
+    <script src="//code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.0/lunr.min.js"></script>
+
+    <!-- js source  -->
+    <script src="/script/doc.js"></script>
+
+    
+
+  </body>
+</html>

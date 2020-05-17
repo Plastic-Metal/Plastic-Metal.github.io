@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+
+    <title>Plastic Metal | PlasticMetal.JMobileSuitLite的常用特性 </title>
+    <meta name="description" content>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+
+    <!-- fonts -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Ubuntu:300,400,500,600,700" rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/style/doc.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="/images/favicon.ico">
+
+    
+
+  </head>
+  <body>
+
+   <script>window.__INITIAL_STATE__ = {"page":{"title":"PlasticMetal.JMobileSuitLite的常用特性","path":"zh-CN/JMobileSuitLite/AdvancedUsage.html","support":{"link_url":"mailto:ferdinandsukhoi@outlook.com","link_text":"Contact Us","text":"Did not you find what are you looking for? Try searching again on the left menu or","navigation":true,"navigation_label":"SUPPORT"}},"data":{"navigation":{"logo":{"text":"Plastic-Metal","type":"link","path":"index.html"},"main":[{"text":"Index","type":"link","path":"index.html"},{"text":"JMobileSuitLite (for JAVA)","type":"label"},{"text":"English Documentation","type":"link","path":"en-US/JMobileSuitLite/index.html","children":[{"text":"Get Started","type":"link","path":"en-US/JMobileSuitLite/GetStarted.html"},{"text":"Create complex commands","type":"link","path":"en-US/JMobileSuitLite/ComplexCommands.html"},{"text":"Use MobileSuitScripts","type":"link","path":"en-US/JMobileSuitLite/MobileSuitScripts.html"},{"text":"Useful Features","type":"link","path":"en-US/JMobileSuitLite/AdvanceUsage.html"}]},{"text":"中文文档","type":"link","path":"zh-CN/JMobileSuitLite/index.html","children":[{"text":"快速开始","type":"link","path":"zh-CN/JMobileSuitLite/GetStarted.html"},{"text":"创建复杂指令","type":"link","path":"zh-CN/JMobileSuitLite/ComplexCommands.html"},{"text":"使用MobileSuit脚本","type":"link","path":"zh-CN/JMobileSuitLite/MobileSuitScripts.html"},{"text":"有用的特性","type":"link","path":"zh-CN/JMobileSuitLite/AdvanceUsage.html"}]},{"text":"MobileSuit (for .NET)","type":"label"},{"text":"English Documentation","type":"link","path":"en-US/MobileSuit/index.html","children":[{"text":"Get Started","type":"link","path":"en-US/MobileSuit/GetStarted.html"}]},{"text":"中文文档","type":"link","path":"zh-CN/MobileSuit/index.html"}]}},"config":{"timezone":"UTC","root":"/","time_format":"HH:mm:ss","theme":"../node_modules/hexo-theme-doc","theme_config":{"swagger_ui":{"version":2,"permalinks":true,"api_explorer":true,"download":"Download specification","show_extensions":false,"deep_linking":true,"display_operation_id":false,"doc_expansion":"none"},"search":{"skip":false,"background":false,"route":"/lunr.json"},"favicon":"images/favicon.ico","support":{"link_url":"mailto:ferdinandsukhoi@outlook.com","link_text":"Contact Us","text":"Did not you find what are you looking for? Try searching again on the left menu or","navigation":true,"navigation_label":"SUPPORT"}}}}</script>
+
+    <div id="react-navigation-root"><div class="doc-navigation" data-reactroot><nav class="doc-navbar"><a href="/index.html" class="doc-navbar__logo"><img src="/images/logo.png" class="doc-navbar__logo__img"><span class="doc-navbar__logo__text">Plastic-Metal</span></a><i class="dc-icon dc-icon--close dc-icon--interactive doc-sidebar-close doc-navbar__sidebar-close doc-navbar__sidebar-close--desktop"></i><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-navbar__sidebar-toggle"></i></nav><nav class="doc-sidebar"><div class="doc-sidebar__vertical-menu"><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-sidebar-toggle--primary doc-sidebar__vertical-menu__item"></i><i class="dc-icon dc-icon--search dc-icon--interactive doc-sidebar__vertical-menu__item doc-sidebar__vertical-menu__item--primary"></i></div><div class="doc-sidebar-content"><div class="doc-sidebar__search-form"></div><ul class="doc-sidebar-list"><li class="doc-sidebar-list__item doc-sidebar-list__item--label"><span class>SUPPORT</span></li><li class="doc-sidebar-list__item doc-sidebar-list__item--link"><a class href="/mailto:ferdinandsukhoi@outlook.com" target="_blank"><span>Contact Us</span></a></li></ul></div></nav></div></div>
+    <div class="doc-content">
+  <div class="dc-page">
+    <div class="dc-card">
+      <div id="react-search-results-root"></div>
+      <div id="page-content" class="doc-formatting">
+        <h2 id="避免一些公有成员的显示"><a href="#避免一些公有成员的显示" class="headerlink" title="避免一些公有成员的显示"></a>避免一些公有成员的显示</h2><p>客户端类里，总会有一些公有成员, 但是如果你不希望其中的一些在MobileSuit中被显示，可以向它们添加 <strong><em>@SuitIgnore</em></strong> 注解.</p>
+<h2 id="多行输入"><a href="#多行输入" class="headerlink" title="多行输入"></a>多行输入</h2><p>MobileSuit的语句可以以多行被输入，但是解析为一行。只需要在非末行的行尾添加 <em>%</em><br>例如:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">he%</span><br><span class="line">llo</span><br></pre></td></tr></table></figure>
+<p>等价于</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hello</span><br></pre></td></tr></table></figure>
+<h2 id="自定义Prompt-Server和Powerline主题的-Prompt-Server"><a href="#自定义Prompt-Server和Powerline主题的-Prompt-Server" class="headerlink" title="自定义Prompt Server和Powerline主题的 Prompt Server"></a>自定义Prompt Server和Powerline主题的 Prompt Server</h2><p>你可以自定义作为 Prompt Server的类, 他们需要实现接口 <strong><em>PlasticMetal.JMobileSuitLite.IO.PromptServer</em></strong>. 当然, 也可以直接继承类 <strong><em>PlasticMetal.JMobileSuitLite.IO.CommonPromptServer</em></strong>.</p>
+<p>使用你的Prompt Server来初始化 <strong><em>SuitConfiguration</em></strong>, 然后使用这个配置去初始化 <strong><em>SuitHost</em></strong>.</p>
+<p>一个自定义Prompt Server主题: Powerline 被内构于包 <em>PlasticMetal.JMobileSuitLite</em> .</p>
+<p>你可以像下面这样使用它:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> SuitHost(Client<span class="class">.<span class="keyword">class</span>, </span></span><br><span class="line"><span class="class">                <span class="title">PowerLineThemedPromptServer</span>.<span class="title">getPowerLineThemeConfiguration</span>()).<span class="title">Run</span>()</span>;</span><br></pre></td></tr></table></figure>
+<p>如果出现乱码, 请确保你已经安装并启用<a href="https://github.com/powerline/fonts" target="_blank" rel="noopener">Powerline字体</a>.</p>
+
+        <div id="react-support-footer-root"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+
+    
+
+    <!-- js vendors -->
+    <script src="//code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.0/lunr.min.js"></script>
+
+    <!-- js source  -->
+    <script src="/script/doc.js"></script>
+
+    
+
+  </body>
+</html>

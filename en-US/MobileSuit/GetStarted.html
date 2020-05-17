@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+
+    <title>Plastic Metal | Get Started - PlasticMetal.MobileSuit </title>
+    <meta name="description" content>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+
+    <!-- fonts -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Ubuntu:300,400,500,600,700" rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/style/doc.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="/images/favicon.ico">
+
+    
+
+  </head>
+  <body>
+
+   <script>window.__INITIAL_STATE__ = {"page":{"title":"Get Started - PlasticMetal.MobileSuit","path":"en-US/MobileSuit/GetStarted.html","support":{"link_url":"mailto:ferdinandsukhoi@outlook.com","link_text":"Contact Us","text":"Did not you find what are you looking for? Try searching again on the left menu or","navigation":true,"navigation_label":"SUPPORT"}},"data":{"navigation":{"logo":{"text":"Plastic-Metal","type":"link","path":"index.html"},"main":[{"text":"Index","type":"link","path":"index.html"},{"text":"JMobileSuitLite (for JAVA)","type":"label"},{"text":"English Documentation","type":"link","path":"en-US/JMobileSuitLite/index.html","children":[{"text":"Get Started","type":"link","path":"en-US/JMobileSuitLite/GetStarted.html"},{"text":"Create complex commands","type":"link","path":"en-US/JMobileSuitLite/ComplexCommands.html"},{"text":"Use MobileSuitScripts","type":"link","path":"en-US/JMobileSuitLite/MobileSuitScripts.html"},{"text":"Useful Features","type":"link","path":"en-US/JMobileSuitLite/AdvanceUsage.html"}]},{"text":"中文文档","type":"link","path":"zh-CN/JMobileSuitLite/index.html","children":[{"text":"快速开始","type":"link","path":"zh-CN/JMobileSuitLite/GetStarted.html"},{"text":"创建复杂指令","type":"link","path":"zh-CN/JMobileSuitLite/ComplexCommands.html"},{"text":"使用MobileSuit脚本","type":"link","path":"zh-CN/JMobileSuitLite/MobileSuitScripts.html"},{"text":"有用的特性","type":"link","path":"zh-CN/JMobileSuitLite/AdvanceUsage.html"}]},{"text":"MobileSuit (for .NET)","type":"label"},{"text":"English Documentation","type":"link","path":"en-US/MobileSuit/index.html","children":[{"text":"Get Started","type":"link","path":"en-US/MobileSuit/GetStarted.html"}]},{"text":"中文文档","type":"link","path":"zh-CN/MobileSuit/index.html"}]}},"config":{"timezone":"UTC","root":"/","time_format":"HH:mm:ss","theme":"../node_modules/hexo-theme-doc","theme_config":{"swagger_ui":{"version":2,"permalinks":true,"api_explorer":true,"download":"Download specification","show_extensions":false,"deep_linking":true,"display_operation_id":false,"doc_expansion":"none"},"search":{"skip":false,"background":false,"route":"/lunr.json"},"favicon":"images/favicon.ico","support":{"link_url":"mailto:ferdinandsukhoi@outlook.com","link_text":"Contact Us","text":"Did not you find what are you looking for? Try searching again on the left menu or","navigation":true,"navigation_label":"SUPPORT"}}}}</script>
+
+    <div id="react-navigation-root"><div class="doc-navigation" data-reactroot><nav class="doc-navbar"><a href="/index.html" class="doc-navbar__logo"><img src="/images/logo.png" class="doc-navbar__logo__img"><span class="doc-navbar__logo__text">Plastic-Metal</span></a><i class="dc-icon dc-icon--close dc-icon--interactive doc-sidebar-close doc-navbar__sidebar-close doc-navbar__sidebar-close--desktop"></i><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-navbar__sidebar-toggle"></i></nav><nav class="doc-sidebar"><div class="doc-sidebar__vertical-menu"><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-sidebar-toggle--primary doc-sidebar__vertical-menu__item"></i><i class="dc-icon dc-icon--search dc-icon--interactive doc-sidebar__vertical-menu__item doc-sidebar__vertical-menu__item--primary"></i></div><div class="doc-sidebar-content"><div class="doc-sidebar__search-form"></div><ul class="doc-sidebar-list"><li class="doc-sidebar-list__item doc-sidebar-list__item--label"><span class>SUPPORT</span></li><li class="doc-sidebar-list__item doc-sidebar-list__item--link"><a class href="/mailto:ferdinandsukhoi@outlook.com" target="_blank"><span>Contact Us</span></a></li></ul></div></nav></div></div>
+    <div class="doc-content">
+  <div class="dc-page">
+    <div class="dc-card">
+      <div id="react-search-results-root"></div>
+      <div id="page-content" class="doc-formatting">
+        <h2 id="Create-your-project"><a href="#Create-your-project" class="headerlink" title="Create your project"></a>Create your project</h2><p>So firstly, you need to <a href="https://docs.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-console?view=vs-2019" target="_blank" rel="noopener">create a new Console Application in Visual Studio</a>. The language (Visual Basic or C#) doesn’t matter, but the following examples will be written in C#.</p>
+<p>Then, you should add <a href="https://www.nuget.org/packages/PlasticMetal.MobileSuit/" target="_blank" rel="noopener">PlasticMetal.MobileSuit</a> to your project(<a href="https://docs.microsoft.com/en-us/nuget/quickstart/install-and-use-a-package-in-visual-studio" target="_blank" rel="noopener">How?</a>).</p>
+<h2 id="Write-the-MobileSuit-Client-class"><a href="#Write-the-MobileSuit-Client-class" class="headerlink" title="Write the MobileSuit Client class"></a>Write the MobileSuit Client class</h2><h3 id="Create-the-class"><a href="#Create-the-class" class="headerlink" title="Create the class"></a>Create the class</h3><p>Add a Class to your project, named <strong><em>Client</em></strong>. It inherits class <strong><em>PlasticMetal.MobileSuit.ObjectModel.SuitClient</em></strong>.</p>
+<h3 id="Add-the-first-command"><a href="#Add-the-first-command" class="headerlink" title="Add the first command"></a>Add the first command</h3><p>Add a method called <strong><em>Hello</em></strong> to class <strong><em>Client</em></strong>. It has no parameters and return value.</p>
+<p>The content of method can be anything you like. You can use <em>IO.WriteLine</em> and <em>IO.ReadLine</em> instead of <em>Console.WriteLine</em> and <em>Console.ReadLine</em>.</p>
+<h3 id="Add-information-and-Alias-for-the-first-command"><a href="#Add-information-and-Alias-for-the-first-command" class="headerlink" title="Add information and Alias for the first command"></a>Add information and Alias for the first command</h3><p>Add custom attributes to the method:</p>
+<ol>
+<li><em>PlasticMetal.MobileSuit.ObjectModel.Attributes.SuitInfo</em> with argument “hello command.”</li>
+<li><em>PlasticMetal.MobileSuit.ObjectModel.Attributes.SuitAlias</em> with argument “H”</li>
+</ol>
+<h3 id="Add-another-command"><a href="#Add-another-command" class="headerlink" title="Add another command"></a>Add another command</h3><p>Add a method called <strong><em>Bye</em></strong> to class <strong><em>Client</em></strong>. It has a string parameter, named <em>name</em>. It returns a <em>string</em>.</p>
+<p>The content of method can be anything you like. You can use <em>Io.WriteLine</em> and <em>Io.ReadLine</em> instead of <em>Console.WriteLine</em> and <em>Console.ReadLine</em>.</p>
+<h3 id="Check-your-code-for-Client-cs"><a href="#Check-your-code-for-Client-cs" class="headerlink" title="Check your code for Client.cs"></a>Check your code for Client.cs</h3><p>It may looks like:</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> PlasticMetal.MobileSuit.ObjectModel;</span><br><span class="line"><span class="keyword">using</span> PlasticMetal.MobileSuit.ObjectModel.Attributes;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">MobileSuitDemo</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Client</span> : <span class="title">SuitClient</span></span><br><span class="line">    &#123;</span><br><span class="line">        [<span class="meta">SuitAlias(<span class="meta-string">"H"</span>)</span>]</span><br><span class="line">        [<span class="meta">SuitInfo(<span class="meta-string">"hello command."</span>)</span>]</span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Hello</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            IO.WriteLine(<span class="string">"Hello! MobileSuit!"</span>);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">string</span> <span class="title">Bye</span>(<span class="params"><span class="keyword">string</span> name</span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            IO.WriteLine(<span class="string">$"Bye! <span class="subst">&#123;name&#125;</span>"</span>);</span><br><span class="line">            <span class="keyword">return</span> <span class="string">"bye"</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Update-Program-class"><a href="#Update-Program-class" class="headerlink" title="Update Program class"></a>Update <strong><em>Program</em></strong> class</h2><p>Add the following code to the <strong><em>Main()</em></strong> method:</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> PlasticMetal.MobileSuit.SuitHost(<span class="keyword">new</span> Client()).Run();</span><br></pre></td></tr></table></figure>
+<h2 id="Run-and-test-your-Application"><a href="#Run-and-test-your-Application" class="headerlink" title="Run and test your Application"></a>Run and test your Application</h2><p>Build and run your application.</p>
+<p>In the console, you may input:</p>
+<ol>
+<li><strong>Help</strong> to see help for MobileSuit</li>
+<li><strong>List</strong> or <strong>ls</strong> to see all available commands for current client.</li>
+<li><strong>Hello</strong> or <strong>h</strong> to run <em>Client.Hello()</em></li>
+<li><strong>Bye</strong> <strong><em>name</em></strong> to run <em>Client.Bye(</em> <strong><em>name</em></strong> <em>)</em></li>
+<li><strong>Exit</strong> to exit the progress</li>
+</ol>
+<p>The process of build such a app is so easy that you just need one class to write.</p>
+
+        <div id="react-support-footer-root"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+
+    
+
+    <!-- js vendors -->
+    <script src="//code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.0/lunr.min.js"></script>
+
+    <!-- js source  -->
+    <script src="/script/doc.js"></script>
+
+    
+
+  </body>
+</html>
