@@ -48,7 +48,7 @@ main:
 
 
 
-- text: MobileSuit (for .NET Core)
+- text: MobileSuit (for .NET)
   type: label
 
 - text: English Documentation
